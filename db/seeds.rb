@@ -11,10 +11,10 @@ User.create(username: "Ben", password: "123")
 User.create(username: "Sam", password: "123")
 
 
-Character.create(name: "Billy", strength: 10, hp: 100, score: 0, user_id: 1)
-Character.create(name: "Charles", strength: 12, hp: 100, score: 0, user_id: 1)
-Character.create(name: "Max", strength: 15, hp: 100, score: 0, user_id: 2)
-Character.create(name: "Stan", strength: 18, hp: 100, score: 0, user_id: 3)
+Character.create(name: "Billy", strength: 10, hp: 100, score: 50, user_id: 1)
+Character.create(name: "Charles", strength: 10, hp: 100, score: 75, user_id: 2)
+Character.create(name: "Max", strength: 10, hp: 100, score: 90, user_id: 3)
+Character.create(name: "Stan", strength: 10, hp: 100, score: 120, user_id: 4)
 
 
 
