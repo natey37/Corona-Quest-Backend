@@ -8,6 +8,11 @@ class CharactersController < ApplicationController
         character = Character.create(characterParams)
         render json: character
     end 
+
+    def show 
+        character = Character.find(params[:id])
+        render json: character
+    end 
   
     
     private 
