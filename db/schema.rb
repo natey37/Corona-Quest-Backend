@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_145708) do
+ActiveRecord::Schema.define(version: 2020_03_25_153354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_03_23_145708) do
     t.integer "hp"
     t.integer "score"
     t.integer "user_id"
+    t.string "username"
   end
 
   create_table "enemies", force: :cascade do |t|

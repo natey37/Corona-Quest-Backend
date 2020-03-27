@@ -24,18 +24,17 @@ class UsersController < ApplicationController
         end
     end
 
-    # def login
-    #     user = User.find_by(username: user_params[:username])
+    
+    def show 
+        user = User.find(params[:id])
 
-    #     # user = User.find_or_create_by(user_params[:username])
-      
-    #     if user && user.authenticate(user_params[:password])
-    #         auth_token = JsonWebToken.encode({user_id: user.id})
-    #         render json: {auth_token: auth_token}, status: :ok
-    #     else
-    #       render json: {error: 'Invalid username / password'}, status: :unauthorized
-    #     end
-    #   end
+        if user.characters == 0 
+          render json: {errors: "You have no Characters"}
+        else 
+          render json: user.characters
+      end 
+    end 
+   
   
     
   

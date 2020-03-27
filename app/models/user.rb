@@ -14,7 +14,8 @@ class User < ApplicationRecord
     
     # validates :username, uniqueness: { case_sensitive: false }
     # # validates_presence_of :password
-
+    
+   
 
    
 end
